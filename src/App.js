@@ -206,8 +206,6 @@ function App() {
       : {};
   };
 
-  console.log();
-
   const handleMapClick = (event) => {
     if (covidStatesData) {
       const stateData = covidStatesData.find(
