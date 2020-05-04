@@ -1,23 +1,65 @@
 .Modal {
+  position: absolute;
+  left: 25%;
+  top: 22.5%;
+  height: 65%;
+  width: 50%;
+  z-index: 10;
+  background-color: rgb(59, 59, 59);
+  color: white;
+  border-radius: 20px;
+  transition: opacity 0.75s ease-out;
+  border: 2px solid white;
+
+  .close-button {
+    height: 3rem;
+    width: 3rem;
     position: absolute;
-    left: 25%;
-    top: 25%;
-    height:  50%;
-    width: 50%;
-    z-index: 0;
-    background-color: #00a1ab;
-    border-radius: 20px;
+    top: 5%;
+    right: 5%;
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 1rem;
+    background: transparent;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.75s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-
-    .close-button {
-        position: absolute;
-        top: 10px;
-        right: 10px;
+    &:hover {
+      transition: all 0.5s;
+      border: 3px solid rgb(31, 31, 31);
+      color: rgb(31, 31, 31);
     }
-
+  }
 }
 
 .Modal.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 800px) {
+  .Modal {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    height: 60%;
+    width: 90%;
+
+    .close-button {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  .Modal.hidden {
     opacity: 0;
     pointer-events: none;
+    transition: opacity 0.3s ease-in;
+  }
 }

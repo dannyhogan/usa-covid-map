@@ -1,26 +1,26 @@
-import React from 'react';
-import './Modal.scss'
-import states from '../../states'
+import React from "react";
+import StateDisplay from "../StateDisplay/StateDisplay";
+import "./Modal.scss";
 
 const Modal = ({ activeState, toggleOpen, modalOpen }) => {
-
-    console.log(activeState)
-    return (
-        <div className={`Modal ${!modalOpen && 'hidden'}`}>
-            <button className="close-button" onClick={() => toggleOpen(open => !open)}>X</button>
-            {
-                activeState ? (
-                    <div className="state-info">
-                        <h1>{states[activeState.state]}</h1>
-                    </div>)
-
-                    : (
-                        <div className="no-state-info">
-                            <h1>No State Info</h1>
-                        </div>)
-            }
+  console.log(activeState);
+  return (
+    <div className={`Modal ${!modalOpen && "hidden"}`}>
+      <button
+        className="close-button"
+        onClick={() => toggleOpen((open) => !open)}
+      >
+        X
+      </button>
+      {activeState ? (
+        <StateDisplay stateData={activeState} />
+      ) : (
+        <div className="no-state-info">
+          <h1>Unable to get COVID-19 data.</h1>
         </div>
-    )
-}
+      )}
+    </div>
+  );
+};
 
-export default Modal
+export default Modal;
