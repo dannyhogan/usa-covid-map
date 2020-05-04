@@ -23,184 +23,184 @@ function App() {
     const generateHexColorForState = (stateCode) => {
       const highest = covidStatesData.sort((a, b) => b.total - a.total)[0];
       const hexValue =
-        250 -
+        255 -
         (covidStatesData.find((o) => o.state === stateCode).totalTestResults /
           highest.totalTestResults) *
           255;
 
-      return `${hexValue}, ${hexValue}`;
+      return `rgb(220, ${hexValue}, ${hexValue}`;
     };
 
     return covidUSData && covidStatesData
       ? {
           AL: {
-            fill: `rgb(255, ${generateHexColorForState("AL")})`,
+            fill: `${generateHexColorForState("AL")})`,
           },
           AK: {
-            fill: `rgb(255, ${generateHexColorForState("AK")})`,
+            fill: `${generateHexColorForState("AK")})`,
           },
           AS: {
-            fill: `rgb(255, ${generateHexColorForState("AS")})`,
+            fill: `${generateHexColorForState("AS")})`,
           },
           AZ: {
-            fill: `rgb(255, ${generateHexColorForState("AZ")})`,
+            fill: `${generateHexColorForState("AZ")})`,
           },
           AR: {
-            fill: `rgb(255, ${generateHexColorForState("AR")})`,
+            fill: `${generateHexColorForState("AR")})`,
           },
           CA: {
-            fill: `rgb(255, ${generateHexColorForState("CA")})`,
+            fill: `${generateHexColorForState("CA")})`,
           },
           CO: {
-            fill: `rgb(255, ${generateHexColorForState("CO")})`,
+            fill: `${generateHexColorForState("CO")})`,
           },
           CT: {
-            fill: `rgb(255, ${generateHexColorForState("CT")})`,
+            fill: `${generateHexColorForState("CT")})`,
           },
           DE: {
-            fill: `rgb(255, ${generateHexColorForState("DE")})`,
+            fill: `${generateHexColorForState("DE")})`,
           },
           DC: {
-            fill: `rgb(255, ${generateHexColorForState("DC")})`,
+            fill: `${generateHexColorForState("DC")})`,
           },
 
           FL: {
-            fill: `rgb(255, ${generateHexColorForState("FL")})`,
+            fill: `${generateHexColorForState("FL")})`,
           },
           GA: {
-            fill: `rgb(255, ${generateHexColorForState("DC")})`,
+            fill: `${generateHexColorForState("DC")})`,
           },
           GU: {
-            fill: `rgb(255, ${generateHexColorForState("GU")})`,
+            fill: `${generateHexColorForState("GU")})`,
           },
           HI: {
-            fill: `rgb(255, ${generateHexColorForState("HI")})`,
+            fill: `${generateHexColorForState("HI")})`,
           },
           ID: {
-            fill: `rgb(255, ${generateHexColorForState("ID")})`,
+            fill: `${generateHexColorForState("ID")})`,
           },
           IL: {
-            fill: `rgb(255, ${generateHexColorForState("IL")})`,
+            fill: `${generateHexColorForState("IL")})`,
           },
           IN: {
-            fill: `rgb(255, ${generateHexColorForState("IN")})`,
+            fill: `${generateHexColorForState("IN")})`,
           },
           IA: {
-            fill: `rgb(255, ${generateHexColorForState("IA")})`,
+            fill: `${generateHexColorForState("IA")})`,
           },
           KS: {
-            fill: `rgb(255, ${generateHexColorForState("KS")})`,
+            fill: `${generateHexColorForState("KS")})`,
           },
           KY: {
-            fill: `rgb(255, ${generateHexColorForState("KY")})`,
+            fill: `${generateHexColorForState("KY")})`,
           },
           LA: {
-            fill: `rgb(255, ${generateHexColorForState("LA")})`,
+            fill: `${generateHexColorForState("LA")})`,
           },
           ME: {
-            fill: `rgb(255, ${generateHexColorForState("ME")})`,
+            fill: `${generateHexColorForState("ME")})`,
           },
           MD: {
-            fill: `rgb(255, ${generateHexColorForState("MD")})`,
+            fill: `${generateHexColorForState("MD")})`,
           },
           MA: {
-            fill: `rgb(255, ${generateHexColorForState("MA")})`,
+            fill: `${generateHexColorForState("MA")})`,
           },
           MI: {
-            fill: `rgb(255, ${generateHexColorForState("MI")})`,
+            fill: `${generateHexColorForState("MI")})`,
           },
           MN: {
-            fill: `rgb(255, ${generateHexColorForState("MN")})`,
+            fill: `${generateHexColorForState("MN")})`,
           },
           MS: {
-            fill: `rgb(255, ${generateHexColorForState("MS")})`,
+            fill: `${generateHexColorForState("MS")})`,
           },
           MO: {
-            fill: `rgb(255, ${generateHexColorForState("MO")})`,
+            fill: `${generateHexColorForState("MO")})`,
           },
           MT: {
-            fill: `rgb(255, ${generateHexColorForState("MT")})`,
+            fill: `${generateHexColorForState("MT")})`,
           },
           NE: {
-            fill: `rgb(255, ${generateHexColorForState("NE")})`,
+            fill: `${generateHexColorForState("NE")})`,
           },
           NV: {
-            fill: `rgb(255, ${generateHexColorForState("NV")})`,
+            fill: `${generateHexColorForState("NV")})`,
           },
           NH: {
-            fill: `rgb(255, ${generateHexColorForState("NH")})`,
+            fill: `${generateHexColorForState("NH")})`,
           },
           NJ: {
-            fill: `rgb(255, ${generateHexColorForState("NJ")})`,
+            fill: `${generateHexColorForState("NJ")})`,
           },
           NM: {
-            fill: `rgb(255, ${generateHexColorForState("NM")})`,
+            fill: `${generateHexColorForState("NM")})`,
           },
           NY: {
-            fill: `rgb(255, ${generateHexColorForState("NY")})`,
+            fill: `${generateHexColorForState("NY")})`,
           },
           NC: {
-            fill: `rgb(255, ${generateHexColorForState("NC")})`,
+            fill: `${generateHexColorForState("NC")})`,
           },
           ND: {
-            fill: `rgb(255, ${generateHexColorForState("ND")})`,
+            fill: `${generateHexColorForState("ND")})`,
           },
           MP: {
-            fill: `rgb(255, ${generateHexColorForState("MP")})`,
+            fill: `${generateHexColorForState("MP")})`,
           },
           OH: {
-            fill: `rgb(255, ${generateHexColorForState("OH")})`,
+            fill: `${generateHexColorForState("OH")})`,
           },
           OK: {
-            fill: `rgb(255, ${generateHexColorForState("OK")})`,
+            fill: `${generateHexColorForState("OK")})`,
           },
           OR: {
-            fill: `rgb(255, ${generateHexColorForState("OR")})`,
+            fill: `${generateHexColorForState("OR")})`,
           },
           PA: {
-            fill: `rgb(255, ${generateHexColorForState("PA")})`,
+            fill: `${generateHexColorForState("PA")})`,
           },
           PR: {
-            fill: `rgb(255, ${generateHexColorForState("PR")})`,
+            fill: `${generateHexColorForState("PR")})`,
           },
           RI: {
-            fill: `rgb(255, ${generateHexColorForState("RI")})`,
+            fill: `${generateHexColorForState("RI")})`,
           },
           SC: {
-            fill: `rgb(255, ${generateHexColorForState("SC")})`,
+            fill: `${generateHexColorForState("SC")})`,
           },
           SD: {
-            fill: `rgb(255, ${generateHexColorForState("SD")})`,
+            fill: `${generateHexColorForState("SD")})`,
           },
           TN: {
-            fill: `rgb(255, ${generateHexColorForState("TN")})`,
+            fill: `${generateHexColorForState("TN")})`,
           },
           TX: {
-            fill: `rgb(255, ${generateHexColorForState("TX")})`,
+            fill: `${generateHexColorForState("TX")})`,
           },
           UT: {
-            fill: `rgb(255, ${generateHexColorForState("UT")})`,
+            fill: `${generateHexColorForState("UT")})`,
           },
           VT: {
-            fill: `rgb(255, ${generateHexColorForState("VT")})`,
+            fill: `${generateHexColorForState("VT")})`,
           },
           VI: {
-            fill: `rgb(255, ${generateHexColorForState("VI")})`,
+            fill: `${generateHexColorForState("VI")})`,
           },
           VA: {
-            fill: `rgb(255, ${generateHexColorForState("VA")})`,
+            fill: `${generateHexColorForState("VA")})`,
           },
           WA: {
-            fill: `rgb(255, ${generateHexColorForState("WA")})`,
+            fill: `${generateHexColorForState("WA")})`,
           },
           WV: {
-            fill: `rgb(255, ${generateHexColorForState("WV")})`,
+            fill: `${generateHexColorForState("WV")})`,
           },
           WI: {
-            fill: `rgb(255, ${generateHexColorForState("WI")})`,
+            fill: `${generateHexColorForState("WI")})`,
           },
           WY: {
-            fill: `rgb(255, ${generateHexColorForState("WY")})`,
+            fill: `${generateHexColorForState("WY")})`,
           },
         }
       : {};
